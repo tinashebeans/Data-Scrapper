@@ -2,9 +2,12 @@
 Have fun scrapping real websites for faster data retrieval using **Python(Pandas)** and **BeautifulSoup** 
 
 # Background
-This project is a web scrapper that is used I used to scrape weather data (temperature, rainfall amount, humidity...etc), for my Final Year Project from the website: https://weatherandclimate.com
+This project is a web scrapper that is used I used to scrape weather data (temperature, rainfall amount, humidity...etc), for my Final Year Project from the website: https://weatherandclimate.com/zimbabwe/manicaland
 
 Here is the code: [data_scrapper](/data%20scrapper/)
+
+This is a screenshot of the table i scraped.
+![actul_table to be scrapped](/images/actual_table.png)
 
 # Tools I Used
 These are the tools i used :
