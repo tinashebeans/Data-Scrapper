@@ -32,7 +32,9 @@ url = "https://weatherandclimate.com/manicaland/march-2017"
 
 page = requests.get(url)
 soup = BeautifulSoup(page.text, "html.parser")
+print(page)
 ```
+![table](/images/table_yedu.png)
 
 ## Searching for the table i wanted
 I used the **class** tag to find the exact table with the data I wanted.
@@ -48,6 +50,7 @@ column_titles = soup.find("table", class_= "tb7").find_all("th")
 data_title_names = [title.text.strip() for title in column_titles]
 print(data_title_names)
 ```
+![colum names](/images/column_names.png)
 
 the code iterates through the list stored in column_titles. For each table header element **(title)** in the list, it extracts the text content using the **.text** attribute. This retrieves the text displayed within the table header.
 
@@ -74,7 +77,9 @@ Start by finding data cells within each row and storing the data in the list **r
 for row in column_data[1:]:
     row_data = row.find_all("td")
     individual_row_data = [data.text.strip() for data in row_data]
+    print(individual_row_data)
 ```
+![individual_row_data](/images/individual_row-data.png)
 
 ## Assigning data to the DataFrame
 Use the **len()** function to count the number of rows currently in the DataFrame and assign the data in **individual_row_data**  to a new row in the DataFrame.
@@ -82,7 +87,10 @@ Use the **len()** function to count the number of rows currently in the DataFram
 ```python
 length = len(df)
     df.loc[length] = individual_row_data
+
+print(df)
 ```
+![datframe](/images/final_df.png)
 
 ## Storing the DataFrame Locally as a .csv file
 
