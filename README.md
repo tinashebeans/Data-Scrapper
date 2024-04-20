@@ -99,3 +99,5 @@ df.to_csv(r'C:\Users\User\Desktop\project\2017\March_data.csv', index = False)
 
 print("data collected and csv is saved successfully!!")
 ```
+
+![csv in excel](/images/csv_in_excel.png)
