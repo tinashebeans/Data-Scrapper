@@ -38,4 +38,3 @@ df.to_csv(r'C:\Users\User\Desktop\project\2010\December_data.csv', index = False
 
 print("data collected and csv is saved successfully!!")
 
-#commit changes
